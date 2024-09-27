@@ -6,12 +6,18 @@ let arr = [new Date(), new RegExp('\d+')]; // (RegExp | Date)[].
 
 
 
-
+// Contextual Typing
 document.addEventListener('click', function (event) {
-  console.log('click event.button: ', event, event.button); //
+  console.log("===> PointerEvent: ",    event, event.button); //
 });
 
 // error: Property 'button' does not exist on type 'Event'.(2339)
 document.addEventListener('scroll', function (event) {
   console.log('event.button: ', event, event.button);
 });
+
+
+window.onmousedown = function (event) {
+  console.log("===> mouseEvent: ", event, event.button);
+  //console.log(mouseEvent.kangaroo); //Property 'kangaroo' does not exist on type 'MouseEvent'.
+};
