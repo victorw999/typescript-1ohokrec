@@ -62,3 +62,17 @@ if (request.status === statusEnum.approved) {
   // send an email
   console.log('Send email to the Applicant...');
 }
+
+//////////////////////////////
+function getSomeValue() {
+  return 123
+}
+enum test3 {
+  Z = 1, 
+  A = getSomeValue(),
+  // B = 2,  // Explicit initializer for B
+  B
+}
+
+console.log('===> test3:', test3);
+
