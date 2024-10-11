@@ -6,4 +6,6 @@ import './style.css';
 // import './5_interface';
 // import './6_interface_func_type'
 // import './7_interface_class' 
+// import './8_interface_class_2' 
+import './9_interface_3'
 
