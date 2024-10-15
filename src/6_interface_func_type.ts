@@ -2,29 +2,39 @@ interface StringFormat {
   (str: string, isUpper: boolean): string
 }
 
-let formatFunc: StringFormat;
+let f1, f2, f3, f4, f5: StringFormat;
 
 //###
 // The type annotations for the parameters are NOT necessary 
 // but it enhance readability and maintainability
-formatFunc = function (str: string, isUpper: boolean) {
-    return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
+f1 = function (str: string, isUpper: boolean) {
+  return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
 };
 
-// formatFunc = function (str, isUpper) {
-//   return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
-// };
+f2 = function (str, isUpper) {
+  return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
+};
 
-// formatFunc = function (a, b) {
-//   return b ? a.toLocaleUpperCase() : a.toLocaleLowerCase();
-// };
+f3 = function (a, b) {
+  return b ? a.toLocaleUpperCase() : a.toLocaleLowerCase();
+};
 
-// formatFunc = function (a: string) {
-//   return a.toLocaleUpperCase() 
-// };
+f4 = function (a: string) {
+  return a.toLocaleUpperCase()
+};
 
-// formatFunc = function (a: number ) {
-//   return a + 'testing'
-// };
+f5 = function (a: number) {
+  return a + 'testing'
+};
 
-console.log(formatFunc('hi', true));
+console.log("f1:   ", f1('hi', true));
+console.log("f2:   ", f2('hi', true));
+console.log("f3:   ", f3('hi', true));
+console.log("f4:   ", f4('hi'));
+console.log("f5:   ", f5('hi'));
+
+
+ 
+
+
+
