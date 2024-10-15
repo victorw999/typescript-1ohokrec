@@ -7,9 +7,9 @@ let formatFunc: StringFormat;
 //###
 // The type annotations for the parameters are NOT necessary 
 // but it enhance readability and maintainability
-// formatFunc = function (str: string, isUpper: boolean) {
-//     return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
-// };
+formatFunc = function (str: string, isUpper: boolean) {
+    return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
+};
 
 // formatFunc = function (str, isUpper) {
 //   return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
