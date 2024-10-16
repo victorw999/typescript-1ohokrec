@@ -2,11 +2,12 @@
 
 class A {
   // private members are not inherited by subclasses
-  private secret: string = 'yoo'
+  // private secret: string = 'yoo'
   protected state: number = 123;  // Use 'protected' to allow access in subclasses
 }
 
 class subclass_A1 extends A {
+  state: number = 222
   constructor() {
     super();  // Call the parent class's constructor
     this.state = 245;  // Access 'state' inherited from A
