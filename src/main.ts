@@ -8,5 +8,6 @@ import './style.css';
 // import './7_interface_class' 
 // import './8_interface_class_2' 
 // import './9_interface_3'
-import './10_extend_1'
+// import './10_extend_1'
+import './11_extend_2'
 

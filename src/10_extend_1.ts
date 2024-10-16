@@ -54,6 +54,7 @@ interface C {
   c(): void
 }
 
+// Interfaces extending multiple interfaces
 interface D extends B, C {
   d(): void
 }
@@ -63,6 +64,7 @@ class test_B implements B {
   b() { }
 }
 
+//
 class test_D implements D {
   a(): void { }
   b(): void { }
